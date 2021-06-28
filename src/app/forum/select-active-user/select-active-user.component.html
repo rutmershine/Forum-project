@@ -1,0 +1,15 @@
+<form #selectUserForm="ngForm" (ngSubmit)="onSubmit()">
+
+    {{users | json}}
+
+    <div class="form-group">
+        <label for="selUser">User</label>
+        <select class="form-control" id="selUser" required [(ngModel)]="selectedUser" name="user">
+            <option *ngFor="let user of users" [value]="user">{{user.displayName}}</option>
+        </select>
+    </div>
+
+    {{selectedUser | json}}
+
+
+</form>
