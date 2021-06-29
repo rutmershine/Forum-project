@@ -1,0 +1,74 @@
+[
+  {
+    "id": 7,
+    "parentCommentId": 5,
+    "ownerId": 1,
+    "txt": "You're all right stupid Flanders, you're all right",
+    "createdAt": "2018-11-01T09:00:00.000Z",
+    "deletedAt": null
+  },
+  {
+    "id": 9,
+    "parentCommentId": 7,
+    "ownerId": 1,
+    "txt": "Homer: Yeah, but doesn't the money go to schools? Apu: You have been to our schools, what do you think?",
+    "createdAt": "2018-11-02T09:00:00.000Z",
+    "deletedAt": null
+  },
+  {
+    "id": 1,
+    "parentCommentId": null,
+    "ownerId": 1,
+    "txt": "Oh my god! If a dead fish and a homeless person had a baby and the baby puked, and a dog ate the puke, this smells like the rear end of that dog!",
+    "createdAt": "2018-11-02T09:00:00.000Z",
+    "deletedAt": null
+  },
+  {
+    "id": 4,
+    "parentCommentId": 1,
+    "ownerId": 1,
+    "txt": "For once the Indian has been outsourced.",
+    "createdAt": "2018-11-02T09:00:00.000Z",
+    "deletedAt": null
+  },
+  {
+    "id": 3,
+    "parentCommentId": null,
+    "ownerId": 2,
+    "txt": "I’ve learned that life is one crushing defeat after another until you just wish Flanders was dead",
+    "createdAt": "2018-11-01T10:00:00.000Z",
+    "deletedAt": null
+  },
+  {
+    "id": 5,
+    "parentCommentId": 2,
+    "ownerId": 2,
+    "txt": "What's the point of going out? We're just gonna wind up back here anyway.",
+    "createdAt": "2018-11-02T09:00:00.000Z",
+    "deletedAt": null
+  },
+  {
+    "id": 2,
+    "parentCommentId": null,
+    "ownerId": 2,
+    "txt": "My beer! You never had a chance to become my urine!",
+    "createdAt": "2018-11-02T10:00:00.000Z",
+    "deletedAt": null
+  },
+  {
+    "id": 8,
+    "parentCommentId": 6,
+    "ownerId": 2,
+    "txt": "I believe that children are our future. Unless we stop them now.",
+    "createdAt": "2018-11-02T10:00:00.000Z",
+    "deletedAt": null
+  },
+  {
+    "id": 6,
+    "parentCommentId": 2,
+    "ownerId": 3,
+    "txt": "Eat My Shorts!",
+    "createdAt": "2018-11-01T11:00:00.000Z",
+    "deletedAt": null
+  }
+]

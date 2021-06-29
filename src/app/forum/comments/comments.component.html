@@ -1,5 +1,18 @@
-{{comments | json}}
-
+<!-- {{comments | json }} -->
+<!-- 
 <ul>
     <app-comment-details *ngFor="let comment of comments" [comment]="comment"></app-comment-details>
+</ul> -->
+<ul>
+    <app-comment-details *ngFor="let comment of flatArray" [comment]="comment" (commentDeleted)="deleteComment($event)" 
+    *ngIf="true"></app-comment-details>
 </ul>
+
+<!-- #cont="getContent()" -->
+<!-- <div >
+    {{getContent()}}
+</div> -->
+
+<!-- <h1>hello h1
+    <h2>hello h2</h2>
+</h1> -->

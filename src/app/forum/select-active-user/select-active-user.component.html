@@ -1,15 +1,27 @@
-<form #selectUserForm="ngForm" (ngSubmit)="onSubmit()">
+<form *ngIf="userId===-1" #selectUserForm="ngForm" (ngSubmit)="onSubmit()">
 
-    {{users | json}}
+    <!-- {{users | json}} -->
 
     <div class="form-group">
         <label for="selUser">User</label>
-        <select class="form-control" id="selUser" required [(ngModel)]="selectedUser" name="user">
-            <option *ngFor="let user of users" [value]="user">{{user.displayName}}</option>
+        <select class="form-control" id="selUser" required [(ngModel)]="userId" name="user">
+            <option *ngFor="let user of users" [value]="user.id">{{user.displayName}}</option>
         </select>
     </div>
 
-    {{selectedUser | json}}
+    <!--  #mySelect (change)='onOptionsSelected(mySelect.value)' -->
+
+    <!-- <div class="form-group">
+        <label for="selUser">Hero Power</label>
+        <select class="form-control" id="selUser" required [(ngModel)]="selectedUser" name="user">
+            <option *ngFor="let user of users" [value]="user" [ngValue]="user">{{user.displayName}}</option>
+        </select>
+    </div> -->
+
+    {{selectedUser}}
+
 
 
 </form>
+
+<app-comments *ngIf="userId!=-1" [userId]="userId"></app-comments>

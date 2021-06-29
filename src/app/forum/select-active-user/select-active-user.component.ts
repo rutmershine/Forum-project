@@ -1,3 +1,4 @@
+import { JsonpClientBackend } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/interfaces/User';
 import { UsersService } from '../users.service';
@@ -13,14 +14,16 @@ export class SelectActiveUserComponent implements OnInit {
 
   users: User[] = [];
 
-  selectedUser: User = {
-    id: -1,
-    displayName: ''
-  };
+  selectedUser: User;
+  userId: number = -1;
+  // selectedUser: User = {
+  //   id: -1,
+  //   displayName: ''
+  // };
 
   ngOnInit(): void {
     this.getUsers();
-    this.initUser();//todo
+    // this.initUser();//todo
   }
 
   getUsers() {
@@ -31,4 +34,16 @@ export class SelectActiveUserComponent implements OnInit {
     this.selectedUser = this.users[0];//todo-check it!
   }
 
+  onChange(newValue) {//
+    // console.log(newValue.id, newValue.displayName);
+    // this.selectedUser = newValue;
+    // // ... do other stuff here ...
+    // console.log(this.selectedUser.id, this.selectedUser.displayName);
+
+
+  }
+
+  onOptionsSelected(value: string) {
+    console.log("the selected value is " + value);
+  }
 }

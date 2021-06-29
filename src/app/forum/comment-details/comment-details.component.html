@@ -1,1 +1,15 @@
+<div>
+    <!-- {{displayUserName}} | Date: {{comment.createdAt | date : 'medium'}} | text: {{comment.txt}}
+    <br>
+    <span style="color: rgb(214, 27, 90);">Date: {{comment.createdAt | date : 'medium'}}</span>
+    <span style="color: rgb(22, 99, 57);">{{comment.createdAt | commentDate}}</span> -->
 
+    <h5>{{comment.id}} {{displayUserName}}</h5>
+    <h5>parent mess: {{ comment.parentCommentId }}</h5>
+    <h5 style="color: rgb(214, 27, 90);">Date: {{comment.createdAt}}</h5>
+    <h5 style="color: rgb(22, 99, 57);">{{comment.createdAt | commentDate}}</h5>
+    <h6>text: {{comment.txt}}</h6>
+
+    <!--  -->
+    <button [disabled]="false" (click)="delete()">DELETE</button>
+</div>
